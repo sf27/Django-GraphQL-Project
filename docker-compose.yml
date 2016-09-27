@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  django:
+    extends:
+      file: docker-compose-common.yml
+      service: graphql-develoment
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - '8000:8000'
