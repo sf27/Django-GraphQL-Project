@@ -36,11 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'django_graphiql',
-
     # This will also make the `graphql_schema` management command available
-    'graphene.contrib.django',
-
+    'graphene_django',
     # Install the base_app app
     'base_app',
 ]
@@ -132,3 +129,8 @@ CORS_ALLOW_METHODS = (
     'DELETE',
     'OPTIONS'
 )
+
+GRAPHENE = {
+    'SCHEMA': 'project.schema.schema',
+    'SCHEMA_OUTPUT': 'data/schema.json'  # defaults to schema.json
+}
