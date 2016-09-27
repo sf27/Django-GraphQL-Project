@@ -23,13 +23,15 @@
     `git clone git@github.com:sf27/Django-GraphQL-Project.git`  
 2. Create a virtualenv and activate it:  
     `cd Django-GraphQL-Project && virtualenv -p python3 env && source env/bin/activate`  
-2. Install the dependencies:  
+3. Install the dependencies:  
     `pip install -r requirements.txt`  
-3. Run the migrations:  
+4. Run the migrations:  
     `python manage.py migrate`  
-4. Load test data:  
+5. Load test data:  
     `python manage.py loaddata ingredients`  
-5. Run the development server:  
+6. Create SuperUser (Optional):  
+    `python manage.py createsuperuser` 
+7. Run the development server:  
     `python manage.py runserver`  
-6. Open the following URL:  
+8. Open the following URL:  
     `http://127.0.0.1:8000/graphiql`  
