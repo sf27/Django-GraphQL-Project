@@ -9,13 +9,13 @@
     `cd Django-GraphQL-Project/ && docker-compose build`  
 3. Starts the containers in the background and leaves them running:  
     `docker-compose up -d`  
-4- Create migrations (Optional):  
+4. Run the migrations:  
     `docker-compose run --rm django python manage.py migrate`  
-5- Create SuperUser (Optional):  
-    `docker-compose run --rm django python manage.py createsuperuser`  
-6- Load test data (Optional):  
+5. Load test data:  
     `docker-compose run --rm django python manage.py loaddata ingredients`  
-4. Open the following URL:  
+6. Create SuperUser (Optional):  
+    `docker-compose run --rm django python manage.py createsuperuser`  
+7. Open the following URL:  
     `http://127.0.0.1:8000/graphiql`  
     
 ### Without Docker:
@@ -27,7 +27,9 @@
     `pip install -r requirements.txt`  
 3. Run the migrations:  
     `python manage.py migrate`  
-4. Run the development server:  
+4. Load test data:  
+    `python manage.py loaddata ingredients`  
+5. Run the development server:  
     `python manage.py runserver`  
-5. Open the following URL:  
+6. Open the following URL:  
     `http://127.0.0.1:8000/graphiql`  
