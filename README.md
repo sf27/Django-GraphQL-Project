@@ -26,7 +26,7 @@
 3. Install the dependencies:  
     `pip install -r requirements.txt`  
 4. Run the migrations:  
-    `python manage.py migrate`  
+    `cd backend && python manage.py migrate`  
 5. Load test data:  
     `python manage.py loaddata ingredients`  
 6. Create SuperUser (Optional):  
